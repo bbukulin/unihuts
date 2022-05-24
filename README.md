@@ -8,8 +8,6 @@
     <a href="https://github.com/bbukulin/unihuts"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://www.unihuts.com">View Live</a>
-    ·
     <a href="https://github.com/bbukulin/unihuts/issues">Report Bug</a>
     ·
     <a href="https://github.com/bbukulin/unihuts/issues">Request Feature</a>
@@ -34,7 +32,6 @@
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#attributions">Attributions</a></li>
   </ol>
 </details>
 
@@ -43,6 +40,30 @@
 ## About The Project
 
 In today's world, most people choose to live together. Sharing a room with someone who has the same interests and hobbies as you can be a great life experience and is also a great way to save money. Unihuts makes the experience of living together easier and safer.
+
+![Image](https://i.imgur.com/YuFcMY0.png)
+<br />
+<br />
+
+Browse public listings, filter & sort results to find your ideal room. <br />
+Cards designed with attention to detail allow you to quickly overview all the relevant information related to each listing.
+![Image](https://i.imgur.com/Veq05Rr.png)
+<br />
+<br />
+
+<em>"More details"</em> link on each card rederects you to full listing details, where you can contact the advertiser.
+![Image](https://i.imgur.com/FXYNdhR.png)
+<br />
+<br />
+
+Same concept used on room listings is used for <strong>roommate</strong> listings. 
+![Image](https://i.imgur.com/EHyQX8g.png)
+<br />
+<br />
+
+To experience all the features of UniHuts, <br /> 
+such as <strong>posting new room / roommate listing</strong> and <strong>updating or deleting existing listing</strong>,
+please <a href="#installation">run the app locally</a>. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -66,15 +87,34 @@ In today's world, most people choose to live together. Sharing a room with someo
    ```sh
    git clone https://github.com/bbukulin/unihuts.git
    ```
-2. Install NPM packages
+   
+2. Navigate to unihuts directory
    ```sh
-   npm run install-dependencies
+   cd unihuts
    ```
-3. Add `.env` file to the root folder and setup values
+
+3. Install NPM packages in <strong> root </strong> dir
+   ```sh
+   npm install
+   ```
+   
+4. Install NPM packages in <strong> client </strong> dir
+   ```sh
+   cd client
+  
+   npm install
+   ```
+
+5. Rename `.env.temp` to `.env` in the root folder and setup values
    ```js
    MONGO_URL: ...
    JWT_SECRET: ...
    JWT_LIFETIME: ...
+   ```
+
+6. From root directory run app locally
+   ```sh
+   npm run dev
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -93,7 +133,7 @@ In today's world, most people choose to live together. Sharing a room with someo
 - [x] Search & filter listings
 - [ ] Multi-language support
 - [ ] Implementing real-time chat
-- [ ] Implementing React Redux
+- [ ] Implementing React Redux for better state management
 
 See the [open issues](https://github.com/bbukulin/unihuts/issues) for a full list of proposed features (and known issues).
 
@@ -107,17 +147,9 @@ If you have a suggestion that would make this project better, please fork the re
 Don't forget to give the project a star! It's greatly appreciated.
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/NewFeature`)
-3. Commit your Changes (`git commit -m 'Add some NewFeature'`)
-4. Push to the Branch (`git push origin feature/NewFeature`)
+2. Create your Feature Branch `git checkout -b feature/NewFeature`
+3. Commit your Changes `git commit -m 'Add some NewFeature'`
+4. Push to the Branch `git push origin feature/NewFeature`
 5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- ATTRIBUTIONS -->
-
-## Attributions
-
-- Attribution list is available at [Attributions](https://unihuts.com/attributions) section.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
